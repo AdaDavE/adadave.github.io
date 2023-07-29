@@ -1,0 +1,102 @@
+<!-- TODO:
+   * flesh out the padding on the 'editor's note and about.
+   * Make it more welcoming!
+   * header stuff? (div above nav)
+   * Find a suitable background.
+   * Add some images
+   * Finish links to other pages. 
+
+-->
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+      <meta charset ="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+      <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+      <link type="text/css" rel="stylesheet" href="css/myStyle.css">
+      <script src="js/jquery-3.6.0.min.js"></script>
+      <script src="js/bootstrap.bundle.js"></script>
+       <script src="js/bootstrap.js"></script>
+      <script src="js/myscript.js"></script>
+   </head>
+   
+   <body>
+     <header> 
+         <!--Picutre here --> 
+         <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <a href="https://slcc.digication.com/adam-evans-eportfolio1/about_me" class="navbar-brand" title="Visit my SLCC ePortfolio!">Adam Evans</a>
+            <button class ="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+            
+            <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-center">
+               <ul class="navbar-nav navbar-tabs">
+                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#">Articles</a>
+                     <div class="dropdown-menu">
+                        <a target="blank" class="dropdown-item" href="articles/memoir.html">1: Memoir</a>
+                        <a target="blank" class="dropdown-item" href="articles/profile.html">2: Profile</a>
+                        <a target="blank" class="dropdown-item" href="articles/informationeffect.html">3: Information Effect</a>
+                        <a target="blank" class="dropdown-item" href="articles/persuasion.html">4: Persuasion Effect</a>
+                     </div>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="citations.html">Citations</a></li>
+                  
+               </ul>
+            </div>
+         </nav>
+     </header>
+      
+      <!-- Editor's Note-->
+      <div>
+         <h2>A note from the Editor:</h2>
+         <p>Welcome to my website! My name is Adam Evans. This site is all about the current housing crunch in the Salt Lake area of Utah. Below you can find links to a few articles I have written on the issue. They include a memoir of my own experiences, a profile of one of my friends who's in the middle of the crisis, an informational analysis, and finally a persuasive letter. I hope you enjoy your time on my site. The top bar is the navigation for the whole site. The articles are under the 'Articles' tab, just click it to see a drop-down list of all the articles for the class. There is also a navigation to a page with more about me, and another with all the sources used in my research. Thanks for visiting!</p>
+      </div>
+      
+      <!-- Articles --> 
+      <div id="articles">
+         <h3>Articles</h3>
+         <a href="articles/memoir.html">
+            <div class="articlebody artdiv memoir">
+               
+               <img src="img/collegedorm.jpg" class="articleimg">
+               <h2 class="articlehead">Memoir: The 20-Something Conundrum</h2>
+               <p class="articlep">In this article I recount my experiences with trying to find an apartment myself, along with the different sacrifices it seems 20 year olds have had to make. The sacrifices include delaying/forgoing school, forgoing independence, or forgoing security.</p>
+            </div>
+         </a>
+          <a href="articles/profile.html">
+            <div class="articlebody artdiv profile">
+               
+               <img src="img/slcconstruction.jpg" class="articleimg">
+               <h2 class="articlehead">Profile: Student-age Utahn's Housing Struggles</h2>
+               <p class="articlep">I recently visited a friend who is moving from her apartment soon. She's had to move not only because she could be closer to her current job, but because the price increased drastically from $950/month to $1250 </p>
+            </div>
+         </a>
+         <a href="articles/informationeffect.html">
+            <div class="articlebody artdiv information">
+              
+               <img src="img/housinggraphic.jpg" class="articleimg"> 
+               <h2 class="articlehead">Informational: Analyzing Utah’s Current Housing Issues and the Effects for Renters</h2>
+               <p class="articlep">This is an analysis of the various factors I have observed in my research into the Utah housing market. In this article I go over some of the current trends noted in my research along with some notable predictions. This piece also includes sources that are constantly updating, so be sure to see my Sources page to see more about them!</p>
+            </div>
+         </a>
+         <a href="articles/persuasion.html">
+            <div class="articlebody artdiv persuasion">
+               
+               <img src="img/crushingcartoon.png" class="articleimg" id="small">
+               <h2 class="articlehead">Persuasive: Utah’s Housing Crisis -- Good for Investors, Bad for the Average Joe</h2>
+               <p class="articlep">This article is a heavy opinion-based piece. I discuss many of the issues I have researched and explain why you should care more about them. I analyze different solutions that have come up through my research and explain why I do or do not like them. In the end I present my own 'call-to-action' that may prove to have some help, even if it's very small.</p>
+            </div>
+         </a>
+      </div>
+      
+      <!-- my info here -->
+      <footer class="jumbotron text-center" style="margin-bottom:0">
+         <p>Site by: Adam Evans, Summer 2021 Last Updated: Aug 7, 2021</p>
+         <p>Powered by Bootstrap!</p>
+      </footer>
+   </body>
+</html>
