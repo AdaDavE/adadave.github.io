@@ -1,0 +1,191 @@
+/**************************
+ * Author: Adam Evans
+ * Modified: Mar. 14, 2020
+***************************/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*Properties for Menus and page Titles along with default formatting.*/
+body{
+   display: inline;
+   padding: 0;
+   margin: 0;
+   font-size: 20px;
+   background-image: url("../img/background.jpg");
+   background-size: cover;
+   text-decoration: none;
+   background-color: #cbdab9
+   box-sizing: border-box;
+}
+h1 {
+   text-align: left; 
+   padding: 20px;
+   margin: 5px;
+   font-family: 'Lobster', cursive;
+   color: #454545
+  }
+p a {text-decoration: none;}
+div h3 {text-align: left; padding: 20px;}
+p {font-family: verdana;}
+h3{font-family verdana; font-style: oblique;}
+footer p{
+   font-size: 7px;
+}
+
+nav ul li, nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    
+ }
+ nav ul{
+    text-align: center;
+    margin-top: 5px;
+ }
+ nav {
+   background: rgba(44,140,153,0.75);
+ }
+ nav ul li a{
+    padding: 10px 30px;
+    background-color: #f1fffa;
+    font-family: 'Amatic SC', cursive;
+    color: #454545;
+    font-size: 30px;
+ }
+ nav ul li{
+    padding: 20px 0px 20px 0px;
+ }
+ nav ul li a:hover{
+    background-color: #454545;
+    color: #cbdab9;
+ }
+ .content{
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(203, 218, 185, 0.85);
+    padding: 5px 0;
+    margin: auto;
+    overflow: hidden;
+ }
+ 
+ /*General content formatting*/
+.content p{
+   margin-left: 20px;
+   padding: 10px;
+   width: 50%;
+   height: 75%;
+   float: left;
+}
+.content img{
+   position: relative;
+   float: right;
+   display: block;
+}
+footer{
+   position: relative;
+   float: left;
+   width: 100%;
+   background: rgba(44,140,153,0.75);
+   text-align: center;
+   padding: 20px;
+   margin: 5px;
+}
+img {
+   float: right;
+}
+
+/*Specialty formatting, such as forms and staff lists*/
+#staff{
+   display: inline-block;
+   float: left;
+   background-color: rgba(	241,255,250, 0.9);
+   padding: 15px;
+   text-align: center;
+   margin-left: 260px;
+   margin-top: 50px;
+}
+#staff h3 {
+   text-align: center;
+   text-decoration: underline;
+}
+#hours{
+   display: inline-block;
+   background-color: rgba(	241,255,250, 0.9);
+   padding: 10px;
+   margin-left: 245px;
+   text-align: left;
+}
+/*Hours box formatting:*/
+div table tr, div table tr td{
+   padding: 10px;
+   margin: 5px;
+}
+div h2{
+   text-align: center;
+   text-decoration: underline;
+}
+/*contact form formatting:*/
+#contactform{
+   float: left;
+   background-color: rgba(	241,255,250, 0.9);
+}
+#contactform input{
+  margin-left: 5px;
+  padding: 5px
+  display: inline-block;
+}
+#contactform label {
+   padding: 10px;
+}
+/*General form formatting*/
+form{
+   position: relative;
+   display: inline-block;
+   padding: 10px;
+   margin: 20px;
+   justify-content: center;
+   background-color: rgba(203, 218, 185, 0.85);
+   
+}
+form label, form div{
+   padding: 8px;
+   margin: 10px 0px 0px -10px;
+}
+form div {
+   display: inline-block;
+   padding: 10px;
+   margin: 15px;
+   }
+form div img{display: block; margin: auto;}
+form input, select{
+   padding: 5px;
+   margin: 8px 2px 8px 2px;
+}
+textarea{
+   height: 100px;
+   width: 500px;
+}
+
+/*Formatting for the images:*/
+#mainpage{
+   right: 175px;
+   bottom: 120px;
+   }
+#order{
+    right: 190px;
+   bottom: 115px;
+   display: block;
+}
+#contact{
+    right: 175px;
+   bottom: 120px;
+}
+#about{
+    right: 175px;
+    bottom: 120px;
+    clear: left;
+}
+form img{
+   float: none;
+   width: 100px;
+   height: 100px;
+}

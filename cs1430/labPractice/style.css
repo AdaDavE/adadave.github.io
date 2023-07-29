@@ -1,0 +1,40 @@
+
+p {
+
+  color: orange;
+
+  text-align: center;
+
+}
+p.p2 {
+   color: purple;
+}
+
+#para1 {
+
+  text-align: center;
+
+  color: green;
+
+}
+
+div {
+
+  color: cyan;
+
+  text-align: center;
+
+}
+h1 {
+   font-family: verdana;
+}
+#ender {
+   text-align: right;
+   color: gray;
+}
+hr {
+   height: 5px;
+   width: 75%;
+   background-color: lightblue;
+   border: 0px;
+}

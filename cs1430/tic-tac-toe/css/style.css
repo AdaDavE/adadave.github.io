@@ -1,0 +1,85 @@
+/***********************
+ * CSS CODE:
+ * Project: Tic-Tac-Toe
+ * Author: Adam Evans
+************************/
+
+* {margin: 0; padding:0; box-sizing: border-box; user-select: none;}
+
+body {
+   background-image: url("../img/background.jpg");
+   background-size: cover;
+   background-color: blue; 
+   margin-top: 15px;
+}
+h2 {
+   font-size: 60px;
+   margin-bottom: 20px;
+   text-align: center;
+   color: lightgrey;
+   background-color: rgba(255,255,255,0.1);
+   
+}
+h1{
+   font-size: 100px;
+   text-align: left;
+   padding: 20px;
+   color: lightblue;
+}
+
+div[id^="row-"] {clear: both;}
+
+div#game-board{
+   /*border: 2px solid red;*/
+   overflow: hidden;
+   margin: 20px auto;
+   width: 605px;
+   background-color: rgba(0,138,255,0.33);
+}
+
+div[id^="row-"] div {
+   border: 5px solid lightgrey;
+   width: 200px;
+   height: 200px;
+   float: left;
+   text-align: center;
+   color: white;
+   font-size: 175px;
+}
+div#row-1 div {border-top: none;}
+div#row-3 div {border-bottom: none;}
+div[id^="row-"] div:first-child {border-left: none;}
+div[id^="row-"] div:last-child {border-right: none;}
+
+#hidden {visibility: hidden;}
+#show {
+   visibility: visible;
+   margin: auto;
+   text-align: center;
+   padding: 20px;
+   margin-bottom: 20px;
+   }
+button {
+   text-align: center;
+   font-size: 20px;
+   padding: 10px;
+   border: 3px dashed darkblue;
+   background-color: rgba(255,255,255,0.75);
+}
+
+table{
+   background-color: rgba(10,10,100,0.9);
+   font-size: 25px;
+   color: lightgrey;
+   margin: auto;
+   width: 33%;
+   margin-bottom: 10px;
+}
+tr,td,th{
+   padding: 5px;
+   border: 2px solid grey;
+   text-align: center;
+}
+#tablelabel{
+   text-decoration: bold;
+}

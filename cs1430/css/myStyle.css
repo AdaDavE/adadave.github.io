@@ -1,0 +1,62 @@
+/***********************
+ * Author: Adam Evans
+ * Project: Final Page
+ **********************/
+body{
+   background-image: url("../img/background2.png");
+   background-color: lightgrey;
+}
+
+div.dropdown-menu{
+   padding: 5px;
+   background-color: lightgrey;
+}
+div.dropdown-menu a {
+   border-bottom : 1px solid black;
+}
+
+#reflection{
+   padding: 50px;
+   margin: 50px;
+   margin-top: 10px;
+   background-color: rgba(63, 73, 131, 0.75);
+}
+div > p {
+   color: lightgrey;
+   font-family: Helvetica;
+   font-size: 16px;
+   text-indent: 20px;
+}
+div > h2 {
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   padding-bottom: 5px;
+   border-bottom: 2px solid white;
+}
+#inspiration_Button{
+   background-color: #3F7683;
+   border-color: #284C54;
+   animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+      0%{transform: rotate(10deg);}
+      50%{transform: rotate(-10deg);}
+      100%{transform: rotate(10deg);}
+}
+#fun_Quotes{
+   display: flex;
+   flex-wrap: wrap;
+   margin: auto;
+   margin-top: 10px;
+   width: 50%;
+   background-color: rgba(148, 157, 204, 0.8);
+   
+}
+div > h3 {
+   display: block;
+   font-style: italic;
+   padding: 15px;
+   margin: auto;
+}

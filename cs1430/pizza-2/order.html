@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+   <html lang="en">
+      <head>
+         <title>Pizza Order</title>
+         <link rel="stylesheet" href="css/style.css">
+      </head>
+      
+      <body>
+         <h1>Pizza Pi Order</h1>
+          <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+         </ul>
+         </nav>
+         
+         <div class="content">
+            
+            <h3>How to Order:</h3>
+               <p>Please provide your information in the fields below! The fields 'Phone', 'Address 1', 'City', 'State', 'Zip', and 'Email' are REQUIRED!</p>
+               <p>To place an order, fill out the information on your pizza as needed. For multiple pizzas, submit multiple forms with the same contact information. If you have any questions or concerns, please see our <a href="contact.html">Contact Page</a> to send us a message.</p>
+               <img id="order" src="img/PizzaClose.jpg" width="400px">
+            
+         </div>
+         <form method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
+            <label for="name">Name:</label>
+            <br>
+            <input name="first" placeholder="First Name" type="text">
+            <input name="last" placeholder="Last Name" type="text">
+            <br>
+            <label for="add1">Address:</label> <br>
+            <input name="add1" placeholder="Address Line 1" type="text" required>
+            <input name="add2" placeholder="Address Line 2" type="text">
+            <br>
+            <input name="city" placeholder="City" type="text" required>
+            <label for="state">State:</label>
+            <select name="state" required>
+               <option value="AL">AL</option>
+               <option value="AK">AK</option>
+               <option value="AZ">AZ</option>
+               <option value="AR">AR</option>
+               <option value="CA">CA</option>
+               <option value="CO">CO</option>
+               <option value="CT">CT</option>
+               <option value="DE">DE</option>
+               <option value="FL">FL</option>
+               <option value="GA">GA</option>
+               <option value="HI">HI</option>
+               <option value="ID">ID</option>
+               <option value="IL">IL</option>
+               <option value="IN">IN</option>
+               <option value="IA">IA</option>
+               <option value="KS">KS</option>
+               <option value="KY">KY</option>
+               <option value="LA">LA</option>
+               <option value="ME">ME</option>
+               <option value="MD">MD</option>
+               <option value="MA">MA</option>
+               <option value="MI">MI</option>
+               <option value="MN">MN</option>
+               <option value="MS">MS</option>
+               <option value="MO">MO</option>
+               <option value="MT">MT</option>
+               <option value="NE">NE</option>
+               <option value="NV">NV</option>
+               <option value="NH">NH</option>
+               <option value="NJ">NJ</option>
+               <option value="NM">NM</option>
+               <option value="NY">NY</option>
+               <option value="NC">NC</option>
+               <option value="ND">ND</option>
+               <option value="OH">OH</option>
+               <option value="OK">OK</option>
+               <option value="OR">OR</option>
+               <option value="PA">PA</option>
+               <option value="RI">RI</option>
+               <option value="SC">SC</option>
+               <option value="SD">SD</option>
+               <option value="TN">TN</option>
+               <option value="TX">TX</option>
+               <option value="UT">UT</option>
+               <option value="VT">VT</option>
+               <option value="VA">VA</option>
+               <option value="WA">WA</option>
+               <option value="WV">WV</option>
+               <option value="WI">WI</option>
+               <option value="WY">WY</option>
+            </select>
+            <br>
+            <input name="zip" placeholder="Zip Code" type="text" required>
+            
+            <p>Contact Information:</p>
+            <label for="phone">Phone Number:</label><br>
+            <input name="phone" placeholder="(xxx)xxx-xxxx" type="text" required>
+            <br>
+            <label for="email">Email</label> <br>
+            <input name="email" placeholder="example@example.com" type="text" required>
+            
+            <p>Your Pizza:</p>
+            <label for="crust">Crust Type:</label>
+            <br>
+               <input name="crust" type="radio" id="Pan" value="pan-style">
+               <label for="Pan">Traditional Pan-Style</label> <br>
+               <input name="crust" type="radio" id="Thin" value="neopolitan">
+               <label for="Thin">Thin Neopolitan-Style</label> <br>
+               <input name="crust" type="radio" id="Medium" value="new york">
+               <label for="Medium">New York style (Medium)</label> <br>
+               <input name="crust" type="radio" id="Deep" value="chicago">
+               <label for="Deep">Chicago style Deep-Dish</label> <br>
+               <input name="crust" type="radio" id="Cheese" value="cheese-stuffed">
+               <label for="Cheese">Cheesy Goodness Crust</label> <br>
+               
+            <br>
+            <label for="size">Pizza Size:</label>
+            <select name="size">
+               <option value="Personal">6-in personal</option>
+               <option value="Small">10-in Small</option>
+               <option value="Medium">12-in Medium</option>
+               <option value="Large">15-in Large</option>
+            </select>
+            <br> <br>
+            
+            <label for="toppings[]">Select Toppings:</label> <br>
+            <div>
+               <img src="img/cheese.jpg">
+               <br>
+               <input name="toppings[]" value="Extra Cheese" type="checkbox">
+               <label for="Extra Cheese">Extra Cheese</label>
+            </div>
+            <div>
+               <img src="img/pepperoni.jpg">
+               <br>
+               <input name="toppings[]" value="pepperoni" type="checkbox">
+               <label for="pepperoni">Pepperoni</label>
+            </div>
+            <div>
+               <img src="img/onions.jpg"> 
+               <br>
+               <input name="toppings[]" value="onions" type="checkbox">
+               <label for="onions">Carmelized Onions</label>
+            </div>
+            <div>
+               <img src="img/sausage.jpg"> 
+               <br>
+               <input name="toppings[]" value="sausage" type="checkbox">
+               <label for="sausage">Smoked Italian Sausage</label>
+            </div>
+            <br>
+            <div>
+               <img src="img/bacon.jpg">
+               <br>
+               <input name="toppings[]" value="bacon" type="checkbox">
+               <label for="bacon">Applewood-Smoked Bacon</label>
+            </div>
+            <div>
+               <img src="img/olives.jpg">
+               <br>
+               <input name="toppings[]" value="olives" type="checkbox">
+               <label for="olives">Black Olives</label>
+            </div>
+            <div>
+               <img src="img/mushrooms.jpg">
+               <br>
+               <input name="toppings[]" value="mushrooms" type="checkbox">
+               <label for="mushrooms">White Mushrooms</label>
+            </div>
+            <div>
+               <img src="img/bellpepper.jpg">
+               <br>
+               <input name="toppings[]" value="green Peppers" type="checkbox">
+               <label for="green Peppers">Green Peppers</label>
+            </div>
+            
+            <br>
+            
+            <p>Anything else we should know?</p>
+            <textarea name="comments" placeholder="Any special instructions?"></textarea>
+            
+            <br>
+            <input type="submit" value="Order">
+            <input type="reset" value="Clear">
+         
+         </form>
+         <footer>
+            <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>
+            <p>Created by Adam Evans</p>
+            <p>Updated: March 2021</p>
+         </footer>
+      </body>
+   
+   </html>

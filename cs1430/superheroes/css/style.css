@@ -1,0 +1,61 @@
+div div{
+   border: 2px solid;
+   border-color: gold;
+   padding: 8px 8px 4px 4px;
+   margin: 10px 10px 5px 5px;
+   background-color: #c0c0c0;
+}
+#DC {
+   padding: 20px 20px 5px 5px;
+   background-color: #132DCB;
+   
+}
+#Marvel {
+   padding: 20px 20px 5px 5px;
+   background-color: #E70E0E;
+   
+}
+p {
+   font: 16px courier;
+   padding: 0px 0px 5px 5px;
+}
+h2 {
+   font: bold small-caps 20px Georgia;
+   background-color: grey;
+   padding: 10px 10px 5px;
+   
+}
+span {
+   color: white;
+   text-decoration: underline;
+}
+h1{
+   font-style: italic;
+   font-variant: small-caps;
+}
+
+span.author {
+   
+   font-weight: bolder;
+   font-style: italic;
+   color: green;
+   
+}
+
+
+a {
+   text-decoration: underline;
+   color: black;
+}
+
+#ww{
+   
+   font-weight: bold;
+   text-decoration: underline;
+   color: black;
+   
+}
+
+
+
+

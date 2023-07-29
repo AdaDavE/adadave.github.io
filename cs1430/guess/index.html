@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Guess my Number!</title>
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+      <script src="js/script.js"></script>
+   </head>
+   
+   <body onload="setGame();">
+      <h3 id="message"></h3>
+      <img src="img/neutralFace.png" id="gameImage">
+      <form action="javascript:void(0);">
+         <input type="text" placeholder="Enter a number between 1-100" id="playerGuess">
+         <input id = "submitGuess" type="submit" value="Submit Guess!" onclick="playGame();" class="show">
+         <input id = "replayGame" type="submit" value="Play Again?" onclick="setGame();" class="hide">
+      </form>
+      <div>
+         <h4 id="tracker">Your guesses:</h4>
+         <p id="userGuesses"></p>
+      </div>
+   </body>
+</html>

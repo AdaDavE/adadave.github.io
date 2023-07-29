@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         .flex-container{
+         display: flex;  
+         flex-direction: row;  
+         background-color: teal;
+         }
+         .responsive {  
+         width: 100%; 
+         height: auto;
+         }
+         .title-container { 
+         position: relative;  
+         text-align: center;  
+         color: darkblue;
+         }
+         .centered { 
+         position: absolute; 
+         top: 50%;  left: 50%;  
+         transform:
+         translate(-50%, -50%);
+         }
+         .footer-container{  
+         text-align: center; 
+          border: 3px solid #82A6DB;
+          }
+          .flex-container > div {
+           width: 150px;
+           font-size: 25px;
+           padding-top: 10px;
+           padding-left: 5px;
+           word-wrap: normal;
+            
+          }
+          
+          .flex-container > div:nth-child(odd){
+            background: lightblue;
+          }
+          
+          img{padding-left: 5px;}
+          a::after{content: " (" attr(href)") " ;}
+          .flex-container > div::first-letter {font-weight: bold;}
+      </style>
+   </head>
+
+   <body>
+      <div class="title-container"> 
+         <img src="img/keyboard.jpg" alt="light bulb" class="responsive"> 
+            <div class="centered">   
+               <h1>Some Random Things About Adam: </h1> 
+            </div>
+      </div>
+      
+      <div class="flex-container">  
+         <div>My Dog</div>  
+         <div>My Cat</div>  
+         <div>My Piano</div>   
+         <p><img src="img/tardis.jpg"  alt="my dog" width="200" height="200" ></p> 
+         <p><img src="img/pudge.jpg" alt="my cat" width="200" height="200"></p>  
+         <p><img src="img/pets.jpg" alt="my dog and cat get along" width="200" height="200"></p> 
+         <p><img src="img/piano.jpg" alt="my piano setup for online classes" width="200" height="200"></p>
+      </div>
+      
+      <div class="flex-container">  
+         <div>Jojo's Bizzare Adventure</div> 
+         <div>Stargate and M*A*S*H*</div>  
+         <div>Tetr.io</div>   
+         <p><img src="img/jojo.jpg" alt="jojo's bizzare adventure fight scene" width="200" height="200"></p>  
+         <p><img src="img/stargate.jpg" alt="cool stargate poster" width="200" height="200"></p> 
+         <p><img src="img/mash.jpg" alt="nice mash cast photo" width="200" height="200"></p> 
+         <p><img src="img/tetrio.png" alt="a fun tetris game I play" width="200" height="200"></p>
+      </div>
+      <div class="footer-container">
+         <h2>I'm a Computer Scientist with a lot of interests!</h2>
+         <p>This really is just to show some cute pictures of my pets and some cool posters of shows I've been watching lately.</p>
+         <a href="https://www.youtube.com/channel/UChjdOAWiweuBYWuKZ9oDDNA">Here's a link to my Youtube Channel!</a>
+      </div>
+   </body>
+</html>
