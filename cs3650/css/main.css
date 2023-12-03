@@ -1,1 +1,5 @@
 @import url('bootstrap.css');
+
+p{
+    font-size: 130%;
+}
