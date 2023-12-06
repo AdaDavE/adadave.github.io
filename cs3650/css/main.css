@@ -1,9 +1,15 @@
 @import url('bootstrap.css');
 
-p{
+p, li{
     font-size: 130%;
 }
 iframe{
     width: 100%;
     height: 50vw;
+}
+img {
+    border: 1px solid lightgray;
+}
+li{
+    list-style-type: none;
 }
